@@ -1,0 +1,101 @@
+.home {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .home-header {
+    margin-bottom: 50px;
+  }
+  
+  .home-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .btn-explore {
+    padding: 10px 20px;
+    background-color: #646cff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-explore:hover {
+    background-color: #535bf2;
+  }
+  
+  /* Categorías */
+  .home-categories {
+    margin-top: 50px;
+  }
+  
+  .home-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .category-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.1);
+  }
+
+  body{
+    height: 100%;
+  }
+
+
+  .firstimage {
+    width: 30%; 
+    height: auto; 
+    border-radius: 15px; 
+    padding: 10px;  
+  }
+
+  .secondimage{
+    width: 1500px; 
+    height: auto; 
+    border-radius: 5px; 
+  }
+
+  .manimage{
+    width: 30%; 
+    height: 720px; 
+    border-radius: 15px; 
+    padding: 10px;  
+  }

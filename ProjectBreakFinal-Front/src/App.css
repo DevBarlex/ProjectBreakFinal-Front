@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Navbar fija arriba */
+/* Navbar pegado en la parte superior */
+.navbar {
+  position: sticky;
+  top: 0; /* Se queda pegado en la parte superior */
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  z-index: 1000;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Espacio reservado debajo del navbar */
+.main-content {
+  padding-top: 80px; /* o lo que mida tu navbar */
+  flex: 1;
+}
+
+/* Footer siempre al fondo */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.products {
+  margin: 0;
+  padding-top: 60px; /* Esto asegura que empiece justo debajo del navbar */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
