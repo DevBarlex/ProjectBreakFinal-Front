@@ -6,7 +6,7 @@ export const useProducts = () => useContext(ProductsContext);
 
 export const ProductsProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
-    const urlApi = 'http://localhost:3000/api/products';
+    const urlApi = 'https://projectbreakfinal-back.onrender.com/api/products';
 
     const fetchProducts = async () => {
         try {
