@@ -7,22 +7,19 @@ export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
 
-    // ✅ Cargar carrito guardado al iniciar
     useEffect(() => {
-        const storedCart = localStorage.getItem('cartItems');  // Usar la misma clave aquí
+        const storedCart = localStorage.getItem('cartItems');  
         if (storedCart) {
             setCartItems(JSON.parse(storedCart));
         }
     }, []);
 
-    // ✅ Guardar carrito cada vez que cambie
     useEffect(() => {
         if (cartItems.length > 0) {
-            localStorage.setItem('cartItems', JSON.stringify(cartItems));  // La misma clave que al cargar
+            localStorage.setItem('cartItems', JSON.stringify(cartItems)); 
         }
     }, [cartItems]);
 
-    // ✅ Agregar producto
     const addToCart = (product) => {
         setCartItems(prevItems => {
             const existingItem = prevItems.find(item => item.id === product.id);
@@ -38,7 +35,6 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    // ✅ Quitar producto
     const removeFromCart = (productId) => {
         setCartItems(prevItems =>
             prevItems
@@ -47,17 +43,15 @@ export const CartProvider = ({ children }) => {
                         ? { ...item, quantity: item.quantity - 1 }
                         : item
                 )
-                .filter(item => item.quantity > 0) // Eliminamos si cantidad llega a 0
+                .filter(item => item.quantity > 0) 
         );
     };
 
-    // ✅ Vaciar carrito
     const clearCart = () => {
         setCartItems([]);
-        localStorage.removeItem('cartItems');  // Asegúrate de eliminarlo correctamente
+        localStorage.removeItem('cartItems');  
     };
 
-    // ✅ Calcular el total
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     };

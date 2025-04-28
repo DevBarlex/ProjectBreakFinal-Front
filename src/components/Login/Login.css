@@ -1,4 +1,3 @@
-/* Login Container */
 .login-container {
   max-width: 400px;
   padding: 2rem;
@@ -8,7 +7,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Header */
 .login-container h2 {
   text-align: center;
   font-size: 1.8rem;
@@ -17,14 +15,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Form */
 .login-container form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* Input Fields */
 .login-container input {
   padding: 0.75rem;
   font-size: 1rem;
@@ -41,7 +37,6 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Button */
 .login-container button {
   padding: 0.75rem;
   background-color: #007bff;
@@ -59,7 +54,6 @@
   transform: scale(1.05);
 }
 
-/* Error message */
 .error {
   color: red;
   text-align: center;
@@ -67,19 +61,18 @@
   margin-top: 10px;
 }
 
-/* Focus Effects */
 input:focus, button:focus {
   outline: none;
 }
 
 
 .login-page {
-  background-image: url('pexels-olia-danilevich-4734786.jpg');  /* Fondo de la página */
-  background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
-  background-position: center;  /* Centra la imagen en la pantalla */
-  height: 100vh;  /* Asegura que ocupe toda la altura de la pantalla */
+  background-image: url('pexels-olia-danilevich-4734786.jpg');  
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;  /* Elimina el margen por defecto */
+  margin: 0; 
 }

@@ -1,8 +1,6 @@
-/* Navbar fija arriba */
-/* Navbar pegado en la parte superior */
 .navbar {
   position: sticky;
-  top: 0; /* Se queda pegado en la parte superior */
+  top: 0;
   width: 100%;
   background-color: #333;
   padding: 10px;
@@ -19,13 +17,11 @@
   font-weight: bold;
 }
 
-/* Espacio reservado debajo del navbar */
 .main-content {
-  padding-top: 80px; /* o lo que mida tu navbar */
+  padding-top: 80px; 
   flex: 1;
 }
 
-/* Footer siempre al fondo */
 .footer {
   background-color: #222;
   color: white;

@@ -9,7 +9,7 @@ import ProductsPage from "./components/ProductsPage/ProductsPage";
 import CategoryPage from "./components/CategoryPage/CategoryPage";
 import CartPage from './components/CartPage/CartPage';
 import ProductDetailPage from './components/ProductDetailPage/ProductDetailPage';
-import Buscar from './components/Buscar/Buscar'; // o la ruta donde guardes tu componente
+import Buscar from './components/Buscar/Buscar'; 
 
 
 
@@ -20,8 +20,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <CartProvider> {/* Mover CartProvider aquí */}
-      <ProductsProvider> {/* Dejar ProductsProvider dentro */}
+    <CartProvider> 
+      <ProductsProvider> 
         <div className="app-container" id="root">
           <Navbar />
           <Routes>

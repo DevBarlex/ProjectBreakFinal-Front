@@ -32,7 +32,6 @@ const CartPage = () => {
             ))}
           </ul>
           <p><strong>Total: {calculateTotal()} €</strong></p>
-          {/* Botón para vaciar el carrito */}
           <button onClick={clearCart} className="clear-cart-button">
             Vaciar carrito
           </button>

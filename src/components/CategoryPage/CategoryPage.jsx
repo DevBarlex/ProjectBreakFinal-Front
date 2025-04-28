@@ -1,6 +1,6 @@
 import React from 'react';
 import { useProducts } from '../../context/ProductsContext';
-import Producto from '../Producto/Producto'; // <-- añade esto
+import Producto from '../Producto/Producto'; 
 import './CategoryPage.css';
 
 const CategoryPage = ({ categoryName }) => {
