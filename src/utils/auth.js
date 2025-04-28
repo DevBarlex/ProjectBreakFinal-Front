@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:3000/api/auth'; // Cambia esto a tu backend
+const apiUrl = 'https://projectbreakfinal-back.onrender.com/api/auth'; 
 
 export const saveToken = (token) => {
   localStorage.setItem('authToken', token);
